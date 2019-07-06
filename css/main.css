@@ -55,7 +55,7 @@ input{
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
-	
+	cursor: pointer;
 	margin:20px 10px;
 	position: relative;
 
@@ -73,7 +73,18 @@ input{
 
 }
 
-.controls label:hover{
+.controls label:hover,
+#slide1:checked ~ .controls > label:nth-of-type(1),
+#slide2:checked ~ .controls > label:nth-of-type(2),
+#slide3:checked ~ .controls > label:nth-of-type(3),
+#slide4:checked ~ .controls > label:nth-of-type(4),
+#slide5:checked ~ .controls > label:nth-of-type(5){
+	background:grey;
+}
+
+.slides{
 	
 }
+
+
 
